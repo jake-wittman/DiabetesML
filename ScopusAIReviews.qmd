@@ -1,0 +1,311 @@
+---
+title: "ScopusAIReviews"
+format: html
+editor: visual
+---
+
+# what are some outstanding questions related to diabetes, diabetes management, access to medications
+
+**Outstanding Questions Related to Diabetes, Diabetes Management, and Access to Medications**
+
+**1. Access to Medications:**
+- **Affordability and Availability:** One of the primary concerns is the affordability and availability of diabetes medications. Despite the availability of generic medications, financial barriers remain significant, especially in low- and middle-income countries (LMICs) [1] [2] [3] . The cost of newer treatments also poses a challenge, necessitating a balance between clinical benefits and financial impacts [3] .
+- **Inequalities in Access:** There are notable inequalities in access to diabetes medications based on socioeconomic status, education, and geographic location. People in remote areas, those with lower education, and the poor often have less access to necessary medications [2] [4] .
+- **Government and Policy Role:** The level of government commitment and the presence of operational diabetes policies significantly influence access to medications. Effective policies should include financial protections, price regulations, and decentralized service delivery [4] [5] .
+
+**2. Diabetes Management:**
+- **Patient-Centered Care:** There is a need for more patient-centered research and management strategies. Many existing studies do not focus on patient-specific questions and concerns, highlighting a gap in the literature and practice [6] .
+- **Education and Self-Care:** Effective diabetes management requires comprehensive education that enhances patients' and their families' self-care capacities. This includes proper medication use, lifestyle changes, and routine monitoring [7] [8] .
+- **Pharmacist Involvement:** Pharmacists play a crucial role in diabetes management, particularly in providing medication advice, ensuring proper storage and use of insulin, and supporting patients with intellectual disabilities [9] [10] .
+
+**3. Research and Future Directions:**
+- **Social Determinants of Health:** Further research is needed to understand the social determinants of health that affect medication access and diabetes management, particularly in LMICs [2] .
+- **Implementation of Existing Research:** There is a need to transition from research to implementation, ensuring that existing knowledge is applied in practice to improve diabetes management and outcomes [6] .
+- **Technological Advancements:** Modern technologies and informatics can aid in organizing patient care, tracking progress, and providing personalized management plans [11] [12] .
+
+**Summary Table:**
+
+| **Area**                  | **Outstanding Questions**                                                                 |
+|---------------------------|-------------------------------------------------------------------------------------------|
+| **Access to Medications** | - How can affordability and availability of medications be improved?                      |
+|                           | - What policies can reduce inequalities in medication access?                             |
+| **Diabetes Management**   | - How can patient-centered care be better integrated into diabetes management?            |
+|                           | - What educational strategies are most effective for enhancing self-care?                 |
+|                           | - How can pharmacists be more effectively utilized in diabetes care?                      |
+| **Research Directions**   | - What are the social determinants affecting diabetes management in different regions?    |
+|                           | - How can existing research be implemented to improve patient outcomes?                   |
+|                           | - What role can modern technologies play in enhancing diabetes management?                |
+
+These questions highlight the multifaceted challenges in diabetes care and the need for comprehensive strategies involving policy, education, and research to address them effectively.
+
+References
+1. Access to diabetes care and treatment in africa: Challenges and opportunities
+Beran, D., Besançon, S.
+Medecine et Sante Tropicales, 2019
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85059691308&origin=scopusAI
+
+2. Assessing evidence of inequalities in access to medication for diabetic populations in low- and middle-income countries: A systematic review
+Christiani, Y., Dhippayom, T., Chaiyakunapruk, N.
+Global Health Action, 2016
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85015763873&origin=scopusAI
+
+3. Availability and Affordability of Essential Medicines: Implications for Global Diabetes Treatment
+Beran, D., Ewen, M., Lipska, K., (...), Yudkin, J.S.
+Current Diabetes Reports, 2018
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85048710760&origin=scopusAI
+
+4. Barriers and Facilitators in Access to Diabetes, Hypertension, and Dyslipidemia Medicines: A Scoping Review
+Castillo-Laborde, C., Hirmas-Adauy, M., Matute, I., (...), Plass, B.
+Public Health Reviews, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85138131523&origin=scopusAI
+
+5. Perceptions of diabetes patients and their caregivers regarding access to medicine in a severely constrained health system: A qualitative study in Harare, Zimbabwe
+Mureyi, D., Katena, N.A., Monera-Penduka, T.
+PLOS Global Public Health, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85171172481&origin=scopusAI
+
+6. Patient Centered Studies Focused on Type 2 Diabetes Management, Educa-tion, and Family Support: A Scoping Review
+Arnold, A., Rosenthal, M., Salkar, M., (...), Mancuso, B.
+Current Diabetes Reviews, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85130352814&origin=scopusAI
+
+7. Brief Overview of Diabetes, the Disease
+Dunning AM, T.
+Diabetes Education: Art, Science and Evidence, 2013
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84885499368&origin=scopusAI
+
+8. Patients' knowledge regarding medication therapy to treat diabetes: A challenge for health care services
+Faria, H.T.G., Zanetti, M.L., Antônio dos Santos, M., De Souza Teixeira, C.R.
+ACTA Paulista de Enfermagem, 2009
+https://www.scopus.com/record/display.uri?eid=2-s2.0-77949418533&origin=scopusAI
+
+9. Pharmacists report lack of reinforcement and the work environment as the biggest barriers to routine monitoring and follow-up for people with diabetes: A survey of community pharmacists
+MacCallum, L., Mathers, A., Kellar, J., (...), Dolovich, L.
+Research in Social and Administrative Pharmacy, 2021
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85083424707&origin=scopusAI
+
+10. Case study: Hidden complexity of medicines use: Information provided by a person with intellectual disability and diabetes to a pharmacist
+Flood, B., Henman, M.C.
+British Journal of Learning Disabilities, 2015
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84937728253&origin=scopusAI
+
+11. Increasing patient empowerment and improving diabetes care by utilizing a computer-based patient "roadmap".
+Barnes, C.S., Tsui, C., Caudle, J., (...), Ziemer, D.C.
+AMIA ... Annual Symposium proceedings / AMIA Symposium. AMIA Symposium, 2006
+https://www.scopus.com/record/display.uri?eid=2-s2.0-34748922859&origin=scopusAI
+
+12. Green Healer Anti-Diabetic Nanomedicine for the Management of Diabetes Mellitus
+Hajam, Y.A., Kumar, R.
+Green Healer Anti-Diabetic Nanomedicine for the Management of Diabetes Mellitus, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85165324687&origin=scopusAI
+
+# How do sociodemographic and social determinants of health affect diabetes medication use, particularly more modern medications like GLP-1, and diabetes control
+
+**Impact of Sociodemographic and Social Determinants of Health on Diabetes Medication Use and Control**
+
+**Sociodemographic Factors:**
+- **Income and Education:** Higher socioeconomic position, including higher income and education levels, is associated with better glycemic control over time [1] [2] [3] . Lower income levels are linked to reduced likelihood of using newer antidiabetic medications like GLP-1 receptor agonists [4] [5] .
+- **Age and Gender:** Older age and male gender are associated with better medication adherence [6] [7] . Younger age and rural residence are linked to poorer glycemic control [8] .
+- **Race and Ethnicity:** Non-Hispanic Black individuals are less likely to use newer antidiabetic drugs compared to non-Hispanic White individuals [4] . Racial and ethnic minorities often face disparities in diabetes management and outcomes due to socioeconomic and structural factors [9] [10] [11] .
+
+**Social Determinants of Health (SDoH:**
+- **Neighborhood and Environment:** Living in neighborhoods with high deprivation or a high percentage of vacant addresses is associated with lower use of newer antidiabetic medications [4] . Neighborhood factors like food insecurity and social cohesion also impact glycemic control [9] [12] [13] .
+- **Psychosocial Factors:** Psychological distress, self-efficacy, and social support significantly influence diabetes self-care and glycemic control [2] [3] [14] [15] . Higher self-efficacy and social support are associated with better self-care behaviors and glycemic control, while psychological distress has a negative impact [3] [14] .
+- **Behavioral Factors:** Physical activity and diet are crucial for diabetes management. Sedentarism and poor diet adherence are linked to lower medication adherence and poorer glycemic control [8] . Programs that enhance health literacy and provide social support can improve these behaviors [16] [17] .
+
+**Medication Use and Adherence:**
+- **GLP-1 Receptor Agonists:** These medications are effective in managing type 2 diabetes and promoting weight loss but are underutilized among lower-income and minority populations due to cost and access issues [5] [18] [19] [20] . Adherence to GLP-1 receptor agonists is influenced by factors such as medication cost, complexity of the regimen, and patient education [6] [7] [21] .
+- **Barriers to Adherence:** Financial issues, transportation barriers, and lack of health insurance are significant barriers to medication adherence [5] [7] [22] . Addressing these barriers through comprehensive strategies, including pharmacist support and community health programs, can improve adherence and outcomes [16] [17] [20] .
+
+**Conclusion:**
+Sociodemographic and social determinants of health significantly impact the use of diabetes medications, particularly newer options like GLP-1 receptor agonists, and overall diabetes control. Addressing these determinants through targeted interventions and support systems is essential for improving diabetes management and reducing health disparities.
+
+References
+1. Association Between Social Determinants of Health and Glycemic Control Among African American People with Type 2 diabetes: The Jackson Heart Study
+Hu, J., Kline, D.M., Tan, A., (...), Joseph, J.J.
+Annals of Behavioral Medicine, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85142402861&origin=scopusAI
+
+2. Social determinants of health in adults with type 2 diabetes-Contribution of mutable and immutable factors
+Walker, R.J., Smalls, B.L., Egede, L.E.
+Diabetes Research and Clinical Practice, 2015
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84949976720&origin=scopusAI
+
+3. Independent effects of socioeconomic and psychological social determinants of health on self-care and outcomes in Type 2 diabetes
+Walker, R.J., Gebregziabher, M., Martin-Harris, B., Egede, L.E.
+General Hospital Psychiatry, 2014
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84919435660&origin=scopusAI
+
+4. Impact of Contextual-Level Social Determinants of Health on Newer Antidiabetic Drug Adoption in Patients with Type 2 Diabetes
+Li, Y., Hu, H., Zheng, Y., (...), Guo, J.
+International Journal of Environmental Research and Public Health, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85149799537&origin=scopusAI
+
+5. Use of Cardioprotective Antidiabetic Medications in Adults With and Without Cardiovascular Disease, 2015 to March 2020
+Sherrill, C.H., Hwang, A.Y.
+Annals of Pharmacotherapy, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85162666106&origin=scopusAI
+
+6. Predictors of medication adherence in patients with type 2 diabetes mellitus
+Curkendall, S.M., Thomas, N., Bell, K.F., (...), Weiss, A.J.
+Current Medical Research and Opinion, 2013
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84884494635&origin=scopusAI
+
+7. Drug therapy and medication adherence in type 2 diabetes in a care facility: A cross sectional survey
+Eze, U.I.H., Akhumi, T.F., Iheanacho, C.O., Saka, S.A.
+Exploratory Research in Clinical and Social Pharmacy, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85148562661&origin=scopusAI
+
+8. Impact of adherence to Mediterranean diet and/or drug treatment on glycaemic control in type 2 diabetes mellitus patients: DM2-CUMCYL study
+Sánchez-Hernández, M.S., Rodríguez-Caldero, M.C., Martín-Pérez, M.P., (...), Carratalá-Munuera, M.C.
+Primary Care Diabetes, 2020
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85087903764&origin=scopusAI
+
+9. Influence of Race, Ethnicity and Social Determinants of Health on Diabetes Outcomes
+Walker, R.J., Strom Williams, J., Egede, L.E.
+American Journal of the Medical Sciences, 2016
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85008674692&origin=scopusAI
+
+10. Social and Structural Determinants of Cardiovascular Complications of Diabetes
+Mensah, P., Valdez, K., Gyawali, A., Snell-Bergeon, J.
+Current Diabetes Reports, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85191939825&origin=scopusAI
+
+11. Moving Diabetes Upstream: the Social Determinants of Diabetes Management and Control Among Immigrants in the US
+Martinez-Cardoso, A., Jang, W., Baig, A.A.
+Current Diabetes Reports, 2020
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85089993701&origin=scopusAI
+
+12. Food insecurity, SNAP participation and glycemic control in low-income adults with predominantly type 2 diabetes: A cross-sectional analysis using NHANES 2007-2018 data
+Alawode, O., Humble, S., Herrick, C.J.
+BMJ Open Diabetes Research and Care, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85159966338&origin=scopusAI
+
+13. Social Determinants of Health and Diabetes-Related Distress in Patients With Insulin-Dependent Type 2 Diabetes: Cross-sectional, Mixed Methods Approach
+Levy, N.K., Park, A., Solis, D., (...), Rogers, E.S.
+JMIR Formative Research, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85144797085&origin=scopusAI
+
+14. Quantifying direct effects of social determinants of health on glycemic control in adults with type 2 diabetes
+Walker, R.J., Gebregziabher, M., Martin-Harris, B., Egede, L.E.
+Diabetes Technology and Therapeutics, 2015
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84922453988&origin=scopusAI
+
+15. Understanding the influence of psychological and socioeconomic factors on diabetes self-care using structured equation modeling
+Walker, R.J., Gebregziabher, M., Martin-Harris, B., Egede, L.E.
+Patient Education and Counseling, 2015
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84920031425&origin=scopusAI
+
+16. Community-Based Efforts to Prevent and Manage Diabetes in Women Living in Vulnerable Communities
+Lachance, L., Kelly, R.P., Wilkin, M., (...), Waddell, S.
+Journal of Community Health, 2018
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85033559067&origin=scopusAI
+
+17. A community integration approach to social determinants of health in New Mexico
+McCloskey, J., Tollestrup, K., Sanders, M.
+Family and Community Health, 2011
+https://www.scopus.com/record/display.uri?eid=2-s2.0-78650872666&origin=scopusAI
+
+18. Glucagon-like Peptide-1 Receptor Agonists in the Management of Type 2 Diabetes Mellitus and Obesity: The Impact of Pharmacological Properties and Genetic Factors
+Klen, J., Dolžan, V.
+International Journal of Molecular Sciences, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85126859888&origin=scopusAI
+
+19. A clinical review of GLP-1 receptor agonists: Efficacy and safety in diabetes and beyond
+Prasad-Reddy, L., Isaacs, D.
+Drugs in Context, 2015
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84938932103&origin=scopusAI
+
+20. Structural factors and their influence on the use of novel antidiabetic agents: Making the case for increased awareness and access to clinical pharmacy services
+Trejos Kweyete, O.M., Woods, D., Okoumba, J., (...), Allen, J.M.
+JACCP Journal of the American College of Clinical Pharmacy, 2025
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85210517448&origin=scopusAI
+
+21. Medication Adherence and Associated Factors in Patients With Type 2 Diabetes: A Structural Equation Model
+Huang, J., Ding, S., Xiong, S., Liu, Z.
+Frontiers in Public Health, 2021
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85119418814&origin=scopusAI
+
+22. Exploring Barriers and Facilitators to Glycemic Control and Shared Medical Appointment Engagement in Underserved Patients with Diabetes
+Ganetsky, V.S., Shea, J.A., Szapary, C., (...), Long, J.A.
+Journal of Health Care for the Poor and Underserved, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85124585442&origin=scopusAI
+
+# What are current knowledge gaps in diabetes care that could be solved with data from continuous glucose monitors, activity records (like steps taken, heart rate), and machine learning methods?
+
+To address the current knowledge gaps in diabetes care that could be solved with data from continuous glucose monitors (CGMs), activity records, and machine learning (ML) methods, several key areas can be identified:
+
+### **Knowledge Gaps and Potential Solutions**
+
+1. **Accurate Estimation of Food Intake and Physical Activity:**
+   - **Current Gap:** Many individuals with diabetes struggle with accurately estimating and reporting their food intake and physical activity, leading to mismatches in insulin dosing and blood glucose levels [1] .
+   - **Potential Solution:** ML algorithms can analyze historical patterns and interpret manual estimations of food intake and physical activity, combined with CGM data, to provide more accurate predictions and recommendations [1] .
+
+2. **Prediction of Hypoglycemic and Hyperglycemic Events:**
+   - **Current Gap:** There is a need for predictive models that can forecast hypoglycemic (<70 mg/dL) and hyperglycemic (>270 mg/dL) events to prevent acute complications [2] .
+   - **Potential Solution:** ML models trained on CGM data can predict these events up to 60 minutes ahead of time, allowing for timely interventions [2] . Explainable ML techniques, such as SHAP, can help identify the most important features contributing to these predictions, enhancing the understanding and management of glucose control [2] .
+
+3. **Personalized Diabetes Management:**
+   - **Current Gap:** Diabetes management often lacks personalization, leading to suboptimal outcomes for some patients [3] .
+   - **Potential Solution:** ML can leverage CGM data and activity records to create personalized treatment plans. Tools like TIDE can analyze CGM data to identify patients with deteriorating glucose control and provide personalized flags for timely interventions [4] .
+
+4. **Integration of Diverse Data Sources:**
+   - **Current Gap:** Effective diabetes management requires the integration of various data sources, including CGM, electronic health records, and patient-reported data, which is currently underutilized [5] .
+   - **Potential Solution:** ML techniques can integrate and analyze these diverse data sources to generate actionable insights, improving the overall management of diabetes [5] .
+
+5. **Addressing Alarm Fatigue and Data Overload:**
+   - **Current Gap:** Users of CGM devices often experience alarm fatigue and data overload, which can reduce the effectiveness of these devices [3] [6] .
+   - **Potential Solution:** ML algorithms can filter and prioritize alerts based on the severity and likelihood of events, reducing alarm fatigue and helping users focus on the most critical information [2] [3] .
+
+6. **Improving Access and Utilization of CGM:**
+   - **Current Gap:** Disparities in access to and utilization of CGM devices exist, often influenced by socioeconomic factors [3] [7] .
+   - **Potential Solution:** Developing utilization measures and shared decision-making tools can help address these disparities and promote the routine use of CGM data in treatment and ongoing management [7] .
+
+### **Summary Table**
+
+| **Knowledge Gap**                              | **Potential Solution**                                                                 |
+|------------------------------------------------|---------------------------------------------------------------------------------------|
+| Accurate estimation of food intake and activity| ML algorithms to analyze historical patterns and sensor data [1]                       |
+| Prediction of hypo/hyperglycemic events        | ML models for ahead-of-time risk predictions [2]                                       |
+| Personalized diabetes management               | Tools like TIDE for personalized analysis and interventions [4]                        |
+| Integration of diverse data sources            | ML techniques to integrate CGM, EHR, and patient-reported data [5]                     |
+| Addressing alarm fatigue and data overload     | ML algorithms to filter and prioritize alerts [2] [3]                                  |
+| Improving access and utilization of CGM        | Utilization measures and shared decision-making tools [7]                              |
+
+By leveraging CGM data, activity records, and ML methods, these knowledge gaps can be addressed, leading to improved diabetes care and management.
+
+References
+1. Cloud recording for diabetes regulation of blood glucose concentrations
+Dow, D.E., Urrea, M., Qin, I., Pham, T.
+Proceedings - 2018 Joint 10th International Conference on Soft Computing and Intelligent Systems and 19th International Symposium on Advanced Intelligent Systems, SCIS-ISIS 2018, 2018
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85067100635&origin=scopusAI
+
+2. Explainable Machine Learning for Real-Time Hypoglycemia and Hyperglycemia Prediction and Personalized Control Recommendations
+Duckworth, C., Guy, M.J., Kumaran, A., (...), Boniface, M.
+Journal of Diabetes Science and Technology, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85131858344&origin=scopusAI
+
+3. Identifying the deficiencies of currently available CGM to improve uptake and benefit
+Barnard-Kelly, K.D., Martínez-Brocca, M.A., Glatzer, T., Oliver, N.
+Diabetic Medicine, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85192859186&origin=scopusAI
+
+4. Algorithm-Enabled, Personalized Glucose Management for Type 1 Diabetes at the Population Scale: Prospective Evaluation in Clinical Practice
+Scheinker, D., Gu, A., Grossman, J., (...), Prahalad, P.
+JMIR Diabetes, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85132048642&origin=scopusAI
+
+5. From data to insights
+Khanam, A., Masoodi, F.S., Bamhdi, A.
+A Biologist's Guide to Artificial Intelligence: Building the foundations of Artificial Intelligence and Machine Learning for Achieving Advancements in Life Sciences, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85189602813&origin=scopusAI
+
+6. Limitations of Continuous Glucose Monitor Usage
+Anhalt, H.
+Diabetes Technology and Therapeutics, 2016
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84962527776&origin=scopusAI
+
+7. Advancing Diabetes Quality Measurement in the Era of Continuous Glucose Monitoring
+Khan, M., Wahid, N., Musser, T., (...), Aprigliano, C.
+Science of Diabetes Self-Management and Care, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85152171078&origin=scopusAI
