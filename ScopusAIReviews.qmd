@@ -9,18 +9,28 @@ editor: visual
 **Outstanding Questions Related to Diabetes, Diabetes Management, and Access to Medications**
 
 **1. Access to Medications:**
+
 - **Affordability and Availability:** One of the primary concerns is the affordability and availability of diabetes medications. Despite the availability of generic medications, financial barriers remain significant, especially in low- and middle-income countries (LMICs) [1] [2] [3] . The cost of newer treatments also poses a challenge, necessitating a balance between clinical benefits and financial impacts [3] .
+
 - **Inequalities in Access:** There are notable inequalities in access to diabetes medications based on socioeconomic status, education, and geographic location. People in remote areas, those with lower education, and the poor often have less access to necessary medications [2] [4] .
+
 - **Government and Policy Role:** The level of government commitment and the presence of operational diabetes policies significantly influence access to medications. Effective policies should include financial protections, price regulations, and decentralized service delivery [4] [5] .
 
 **2. Diabetes Management:**
-- **Patient-Centered Care:** There is a need for more patient-centered research and management strategies. Many existing studies do not focus on patient-specific questions and concerns, highlighting a gap in the literature and practice [6] .
+
+- **Patient-Centered Care:** There is a need for more patient-centered research and management strategies. Many existing 
+studies do not focus on patient-specific questions and concerns, highlighting a gap in the literature and practice [6] .
+
 - **Education and Self-Care:** Effective diabetes management requires comprehensive education that enhances patients' and their families' self-care capacities. This includes proper medication use, lifestyle changes, and routine monitoring [7] [8] .
+
 - **Pharmacist Involvement:** Pharmacists play a crucial role in diabetes management, particularly in providing medication advice, ensuring proper storage and use of insulin, and supporting patients with intellectual disabilities [9] [10] .
 
 **3. Research and Future Directions:**
+
 - **Social Determinants of Health:** Further research is needed to understand the social determinants of health that affect medication access and diabetes management, particularly in LMICs [2] .
+
 - **Implementation of Existing Research:** There is a need to transition from research to implementation, ensuring that existing knowledge is applied in practice to improve diabetes management and outcomes [6] .
+
 - **Technological Advancements:** Modern technologies and informatics can aid in organizing patient care, tracking progress, and providing personalized management plans [11] [12] .
 
 **Summary Table:**
@@ -104,17 +114,25 @@ https://www.scopus.com/record/display.uri?eid=2-s2.0-85165324687&origin=scopusAI
 **Impact of Sociodemographic and Social Determinants of Health on Diabetes Medication Use and Control**
 
 **Sociodemographic Factors:**
+
 - **Income and Education:** Higher socioeconomic position, including higher income and education levels, is associated with better glycemic control over time [1] [2] [3] . Lower income levels are linked to reduced likelihood of using newer antidiabetic medications like GLP-1 receptor agonists [4] [5] .
+
 - **Age and Gender:** Older age and male gender are associated with better medication adherence [6] [7] . Younger age and rural residence are linked to poorer glycemic control [8] .
+
 - **Race and Ethnicity:** Non-Hispanic Black individuals are less likely to use newer antidiabetic drugs compared to non-Hispanic White individuals [4] . Racial and ethnic minorities often face disparities in diabetes management and outcomes due to socioeconomic and structural factors [9] [10] [11] .
 
 **Social Determinants of Health (SDoH:**
+
 - **Neighborhood and Environment:** Living in neighborhoods with high deprivation or a high percentage of vacant addresses is associated with lower use of newer antidiabetic medications [4] . Neighborhood factors like food insecurity and social cohesion also impact glycemic control [9] [12] [13] .
+
 - **Psychosocial Factors:** Psychological distress, self-efficacy, and social support significantly influence diabetes self-care and glycemic control [2] [3] [14] [15] . Higher self-efficacy and social support are associated with better self-care behaviors and glycemic control, while psychological distress has a negative impact [3] [14] .
+
 - **Behavioral Factors:** Physical activity and diet are crucial for diabetes management. Sedentarism and poor diet adherence are linked to lower medication adherence and poorer glycemic control [8] . Programs that enhance health literacy and provide social support can improve these behaviors [16] [17] .
 
 **Medication Use and Adherence:**
+
 - **GLP-1 Receptor Agonists:** These medications are effective in managing type 2 diabetes and promoting weight loss but are underutilized among lower-income and minority populations due to cost and access issues [5] [18] [19] [20] . Adherence to GLP-1 receptor agonists is influenced by factors such as medication cost, complexity of the regimen, and patient education [6] [7] [21] .
+
 - **Barriers to Adherence:** Financial issues, transportation barriers, and lack of health insurance are significant barriers to medication adherence [5] [7] [22] . Addressing these barriers through comprehensive strategies, including pharmacist support and community health programs, can improve adherence and outcomes [16] [17] [20] .
 
 **Conclusion:**
@@ -238,27 +256,39 @@ To address the current knowledge gaps in diabetes care that could be solved with
 ### **Knowledge Gaps and Potential Solutions**
 
 1. **Accurate Estimation of Food Intake and Physical Activity:**
+
    - **Current Gap:** Many individuals with diabetes struggle with accurately estimating and reporting their food intake and physical activity, leading to mismatches in insulin dosing and blood glucose levels [1] .
+   
    - **Potential Solution:** ML algorithms can analyze historical patterns and interpret manual estimations of food intake and physical activity, combined with CGM data, to provide more accurate predictions and recommendations [1] .
 
 2. **Prediction of Hypoglycemic and Hyperglycemic Events:**
+
    - **Current Gap:** There is a need for predictive models that can forecast hypoglycemic (<70 mg/dL) and hyperglycemic (>270 mg/dL) events to prevent acute complications [2] .
+   
    - **Potential Solution:** ML models trained on CGM data can predict these events up to 60 minutes ahead of time, allowing for timely interventions [2] . Explainable ML techniques, such as SHAP, can help identify the most important features contributing to these predictions, enhancing the understanding and management of glucose control [2] .
 
 3. **Personalized Diabetes Management:**
+
    - **Current Gap:** Diabetes management often lacks personalization, leading to suboptimal outcomes for some patients [3] .
+   
    - **Potential Solution:** ML can leverage CGM data and activity records to create personalized treatment plans. Tools like TIDE can analyze CGM data to identify patients with deteriorating glucose control and provide personalized flags for timely interventions [4] .
 
 4. **Integration of Diverse Data Sources:**
+ 
    - **Current Gap:** Effective diabetes management requires the integration of various data sources, including CGM, electronic health records, and patient-reported data, which is currently underutilized [5] .
+   
    - **Potential Solution:** ML techniques can integrate and analyze these diverse data sources to generate actionable insights, improving the overall management of diabetes [5] .
 
 5. **Addressing Alarm Fatigue and Data Overload:**
+ 
    - **Current Gap:** Users of CGM devices often experience alarm fatigue and data overload, which can reduce the effectiveness of these devices [3] [6] .
+   
    - **Potential Solution:** ML algorithms can filter and prioritize alerts based on the severity and likelihood of events, reducing alarm fatigue and helping users focus on the most critical information [2] [3] .
 
 6. **Improving Access and Utilization of CGM:**
+ 
    - **Current Gap:** Disparities in access to and utilization of CGM devices exist, often influenced by socioeconomic factors [3] [7] .
+   
    - **Potential Solution:** Developing utilization measures and shared decision-making tools can help address these disparities and promote the routine use of CGM data in treatment and ongoing management [7] .
 
 ### **Summary Table**
@@ -309,3 +339,208 @@ https://www.scopus.com/record/display.uri?eid=2-s2.0-84962527776&origin=scopusAI
 Khan, M., Wahid, N., Musser, T., (...), Aprigliano, C.
 Science of Diabetes Self-Management and Care, 2023
 https://www.scopus.com/record/display.uri?eid=2-s2.0-85152171078&origin=scopusAI
+
+# What are current knowledge gaps in forecasting glucose levels using continuous glucose monitors
+
+**Current Knowledge Gaps in Forecasting Glucose Levels Using Continuous Glucose Monitors (CGMs)**
+
+Continuous glucose monitors (CGMs) have significantly advanced diabetes management by providing real-time data on glucose levels. However, several knowledge gaps and challenges remain in forecasting glucose levels accurately:
+
+### **Physiological Delays and Accuracy**
+
+- **Physiological Delay**: There is a notable delay between blood glucose levels and interstitial fluid (ISF) glucose levels, which CGMs measure. This delay can affect the timeliness and accuracy of glucose forecasts, potentially leading to delayed insulin dosing and increased risk of hyperglycemia or hypoglycemia [1] [2] [3] .
+
+- **Accuracy of Predictions**: Current CGM systems often struggle with accuracy, particularly in predicting hypoglycemic events. The accuracy of predictive alerts is not yet optimal, and various models have been developed to address this, but none have achieved 100% accuracy [4] [5] .
+
+### **Model Limitations**
+
+- **Single Model Limitations**: Many existing prediction models, such as ARIMA, LSSVM, GRU, and LSTM, have limitations in capturing both linear and nonlinear characteristics of blood glucose trends. Hybrid models combining these approaches have been proposed to improve accuracy, but further validation is needed [6] [7] .
+
+- **Short-term vs. Long-term Predictions**: Most research focuses on short-term glucose forecasting, often overlooking the need for accurate long-term predictions. Long-term forecasting (e.g. 60, 120, and 240 minutes) remains a critical area requiring more exploration and development [8] .
+
+### **Data and Methodological Challenges**
+
+- **Small and Private Datasets**: Many prediction methods are evaluated on small, private datasets, which impedes reproducibility and broader research efforts. There is a need for standardized prediction tasks and systematic comparisons 
+between methods to identify the most effective tools [9] .
+
+- **Behavioral Interventions**: Current research lacks computational approaches that recommend behavioral interventions (e.g. changes in diet, exercise) to bring glucose levels to a normal range. Integrating such recommendations could enhance the practical utility of CGM forecasts [10] .
+
+### **Technological and Practical Issues**
+
+- **Sensor Delays and Malfunctions**: CGM systems face challenges related to sensor delays (approximately 10 minutes between interstitial and plasma glucose readings) and potential malfunctions, complicating the interpretation of rapid glucose level changes [3] .
+
+- **Wearability and User Compliance**: The success of CGM systems also depends on their wearability and user compliance. Ensuring that devices are comfortable and easy to use is crucial for their widespread adoption and effectiveness [5] .
+
+### **Future Directions**
+
+- **Improving Predictive Models**: Future research should focus on developing and validating more accurate predictive models, possibly through hybrid or ensemble approaches that combine the strengths of multiple models [3] .
+
+- **Standardizing Data and Methods**: Establishing a consolidated repository of publicly available CGM datasets and standardized tasks can foster reproducibility and coordinated research efforts [9] .
+
+- **Incorporating Behavioral Data**: Integrating behavioral data into predictive models can provide more comprehensive and actionable insights for managing glucose levels [10] .
+
+By addressing these gaps, the accuracy and utility of CGM-based glucose forecasting can be significantly improved, leading to better diabetes management and patient outcomes.
+
+References
+1. Glucose Prediction using Wide-Deep LSTM Network for Accurate Insulin Dosing in Artificial Pancreas
+Kalita, D., Mirza, K.B.
+Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS, 2022
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85138127590&origin=scopusAI
+
+2. From self-monitoring of glucose to predictive continuous glucose monitoring
+Otway, D., Gilmour, M.
+Diabetic Hypoglycemia, 2013
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84879659718&origin=scopusAI
+
+3. Comparative Analysis of Predictive Interstitial Glucose Level Classification Models
+Kistkins, S., Mihailovs, T., Lobanovs, S., (...), Bļizņuks, D.
+Sensors, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85174175775&origin=scopusAI
+
+4. Prediction of blood glucose concentration ahead of time with feature based neural network
+Shanthi, S., Kumar, D.
+Malaysian Journal of Computer Science, 2012
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84871416229&origin=scopusAI
+
+5. Continuous glucose monitoring: Current use and future directions
+Desalvo, D., Buckingham, B.
+Current Diabetes Reports, 2013
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84884589359&origin=scopusAI
+
+6. Short-term prediction for dynamic blood glucose trends based on ARIMA-LSSVM-GRU model
+Zhang, Y., Ning, Y., Li, B., (...), Dang, Y.
+Journal of Physics: Conference Series, 2021
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85118457651&origin=scopusAI
+
+7. Analysis and Comparison of Machine Learning Models for Glucose Forecasting
+Simon, T., Zhang, J., Wang, S.
+Lecture Notes in Networks and Systems, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85151047124&origin=scopusAI
+
+8. Long-Term Predictive Analytics of Continuous Glucose Sensing for Enhanced Glycemic Control
+Shuvo, M.M.H., Titirsha, T., Oliva, G., (...), Islam, S.K.
+Proceedings of IEEE Computer Society Annual Symposium on VLSI, ISVLSI, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85206130619&origin=scopusAI
+
+9. GLUCOBENCH: CURATED LIST OF CONTINUOUS GLUCOSE MONITORING DATASETS WITH PREDICTION BENCHMARKS
+Sergazinov, R., Chun, E., Rogovchenko, V., (...), Gaynanova, I.
+12th International Conference on Learning Representations, ICLR 2024, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85200601318&origin=scopusAI
+
+10. GlySim: Modeling and Simulating Glycemic Response for Behavioral Lifestyle Interventions
+Arefeen, A., Ghasemzadeh, H.
+BHI 2023 - IEEE-EMBS International Conference on Biomedical and Health Informatics, Proceedings, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85179509015&origin=scopusAI
+
+#Tell me about how wearable activity monitors have been used in conjunction with continuous glucose monitoring. What factors have been found to be best in predicting glucose levels into the future? What models or machine learning methods have worked best?
+
+### Wearable Activity Monitors and Continuous Glucose Monitoring
+
+**Integration of Wearable Activity Monitors with CGM:**
+
+Wearable activity monitors, such as fitness trackers and smartwatches, have been increasingly integrated with continuous glucose monitoring (CGM) systems to enhance diabetes management. These devices can track physical activity, heart rate, sleep patterns, and other physiological parameters, which are crucial for understanding and predicting glucose fluctuations [1] [2] [3] [4] . The integration of these wearables with CGM allows for a more comprehensive monitoring system that can provide real-time data and insights into how various factors, including physical activity, affect glucose levels [1] [2] [3] .
+
+**Factors Influencing Glucose Level Predictions:**
+
+Several factors have been identified as significant in predicting future glucose levels:
+
+- **Physical Activity:** Physical activity has a direct impact on glucose levels, and monitoring it can help in predicting glucose trends [1] [4] .
+
+- **Meals and Insulin:** The timing and composition of meals, as well as insulin administration, are critical factors influencing glucose levels [1] .
+
+- **Physiological Signals:** Heart rate, skin temperature, and electrodermal activity are among the physiological signals that can be used to predict glucose levels [4] [5] [6] [7] .
+
+**Effective Models and Machine Learning Methods:**
+Various machine learning models have been employed to predict glucose levels, with some showing more promise than others:
+
+- **Long Short-Term Memory (LSTM) Networks:** LSTM models have been adapted to incorporate patient-specific data, showing high accuracy in predicting glucose levels up to 30 minutes in advance [8] [9] [10] .
+
+- **Random Forest (RF) and Gradient Boosting Trees (GBT:** These models, especially when combined with pre-clustering techniques, have demonstrated high predictive accuracy for short-term glucose forecasts [11] [12] .
+
+- **Support Vector Machines (SVM) and Decision Trees:** These models have also been used effectively, particularly when combined with features from wearable sensors [5] .
+
+- **Autoregressive Integrated Moving Average (ARIMA) and Temporal Convolutional Networks (TCN:** These models have been effective in time-series forecasting of glucose levels, with TCNs being particularly robust against spurious oscillations [13] [14] .
+
+**Summary of Key Models and Their Performance:**
+
+| **Model** | **Prediction Horizon** | **Performance Metrics** | **Notes** |
+|-----------|------------------------|-------------------------|-----------|
+| LSTM | 30 minutes | >85% accuracy | High accuracy with patient-specific customization [8] [9]  |
+| Random Forest (RF) | 45 minutes | Acceptable accuracy | Effective on constrained devices [11]  |
+| Gradient Boosting Trees (GBT) | 15-30 minutes | High predictive accuracy | Enhanced with pre-clustering [12]  |
+| ARIMA | 30 minutes | Low RMSE | Effective for time-series data [13]  |
+| Temporal Convolutional Networks (TCN) | 30 minutes | Robust performance | Handles spurious oscillations well [13] [14]  |
+
+**Conclusion:**
+The integration of wearable activity monitors with CGM systems has significantly enhanced the ability to predict glucose levels by providing additional physiological data. Factors such as physical activity, meals, and physiological signals are crucial in these predictions. Among the various models, LSTM, RF, GBT, ARIMA, and TCN have shown the most promise, with each having specific strengths depending on the context and data available.
+
+References
+1. Sensor-Based Monitoring of Physical Activity for Glucose Management in Diabetic Patients: A Review
+Campanella, S., Palma, L.
+Lecture Notes in Electrical Engineering, 2025
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85215932776&origin=scopusAI
+
+2. The Promise and Perils of Wearable Physiological Sensors for Diabetes Management
+Schwartz, F.L., Marling, C.R., Bunescu, R.C.
+Journal of Diabetes Science and Technology, 2018
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85044029665&origin=scopusAI
+
+3. IoMT-Enabled Wearable Sensors for Continuous Glucose Monitoring in Diabetes Management
+Edward Naveen, V., Jenefa, A., Ebenezer, V., (...), Solomon, I.
+International Conference on Self Sustainable Artificial Intelligence Systems, ICSSAS 2023 - Proceedings, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85181061125&origin=scopusAI
+
+4. Enhanced accuracy of continuous glucose monitoring during exercise through physical activity tracking integration
+Sanz, A.J.L., Díez, J.L., Giménez, M., Bondia, J.
+Sensors (Switzerland), 2019
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85071749002&origin=scopusAI
+
+5. Prediction of Interstitial Glucose Levels Through Wearable Sensors Using Machine Learning
+Ali, H., Madanian, S., Malik, N., (...), Niazi, I.K.
+Proceedings of the 2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering, CSDE 2023, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85190610236&origin=scopusAI
+
+6. Non-invasive wearables for remote monitoring of HbA1c and glucose variability: Proof of concept
+Bent, B., Cho, P.J., Wittmann, A., (...), Dunn, J.P.
+BMJ Open Diabetes Research and Care, 2021
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85108112179&origin=scopusAI
+
+7. Detection of Hypoglycemia and Hyperglycemia Using Noninvasive Wearable Sensors: Electrocardiograms and Accelerometry
+Dave, D., Vyas, K., Branan, K., (...), Erraguntla, M.
+Journal of Diabetes Science and Technology, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85135519828&origin=scopusAI
+
+8. Personalized Blood Glucose Forecasting Models Using Machine Learning
+Jyoti, Saloni, S., Pathak, M.
+2024 Asia Pacific Conference on Innovation in Technology, APCIT 2024, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85205549766&origin=scopusAI
+
+9. A Comparison of Machine Learning Algorithms in Blood Glucose Prediction for People with Type 1 Diabetes
+Wang, Y.
+ACM International Conference Proceeding Series, 2021
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85122084356&origin=scopusAI
+
+10. Leveraging deep learning models for continuous glucose monitoring and prediction in diabetes management: towards enhanced blood sugar control
+Mohamed Yousuff, A.R., Zainulabedin Hasan, M., Anand, R., Rajasekhara Babu, M.
+International Journal of System Assurance Engineering and Management, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85182407971&origin=scopusAI
+
+11. Constrained IoT-Based Machine Learning for Accurate Glycemia Forecasting in Type 1 Diabetes Patients
+Rodríguez-Rodríguez, I., Campo-Valera, M., Rodríguez, J.-V., Frisa-Rubio, A.
+Sensors, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85152318327&origin=scopusAI
+
+12. Machine Learning Algorithms Based on Time Series Pre-Clustering for Nocturnal Glucose Prediction in People with Type 1 Diabetes
+Kladov, D.E., Berikov, V.B., Semenova, J.F., Klimontov, V.V.
+Diagnostics, 2024
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85208368136&origin=scopusAI
+
+13. Analysis and Comparison of Machine Learning Models for Glucose Forecasting
+Simon, T., Zhang, J., Wang, S.
+Lecture Notes in Networks and Systems, 2023
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85151047124&origin=scopusAI
+
+14. Benchmarking Machine Learning Algorithms on Blood Glucose Prediction for Type i Diabetes in Comparison with Classical Time-Series Models
+Xie, J., Wang, Q.
+IEEE Transactions on Biomedical Engineering, 2020
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85092426708&origin=scopusAI
