@@ -1,6 +1,6 @@
 ---
 title: "Research Proposal"
-format: pdf
+format: docx
 editor: visual
 csl: resources/ama.csl
 citation-abbreviations: resources/medline-abbreviations.json
@@ -27,4 +27,3 @@ To evaluate model performance, we will evaluate model accuracy over progressivel
 
 ::: {#refs}
 :::
-

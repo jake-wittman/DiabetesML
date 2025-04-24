@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+format: pdf
+editor: visual
+---
+
+Check the CGM manifest. Gives overview of data
+
+```{r}
+library(tidyverse)
+library(jsonlite)
+data_path <- '//cdc.gov/locker/CCHP_NCCD_DDT_Data1/epistat/Jake Wittman/Workstation/DiabetesML/data'
+
+gcm_manifest_path <- file.path(data_path, 'wearable_blood_glucose/manifest.tsv')
+gcm_manifest <- read_tsv(gcm_manifest_path)
+head(gcm_manifest)
+
+```
+
+Can get some summary about average glucose levels, number of glucose records, number of days of recording. 1049 participants, with an average of 2746 observations per participant over an average of 10 days. Glucose ranged between 67.6 to 309.
+
+```{r}
+skimr::skim(gcm_manifest)
+```
