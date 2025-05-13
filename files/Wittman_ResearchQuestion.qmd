@@ -1,0 +1,29 @@
+---
+title: "Research Proposal"
+format: docx
+editor: visual
+csl: resources/ama.csl
+citation-abbreviations: resources/medline-abbreviations.json
+bibliography: references.bib
+---
+
+## Background
+
+Diabetes mellitus is a metabolic disorder affecting more than 24 million people in the United States [@surveill]. This disorder ultimately manifests as chronic hyperglycemia and a number of potential comorbidities, including depression, cardiovascular disease, and cancer [@zelenko2014; @wang2020; @liu2016; @shaya]. Continuous glucose monitoring technology provides real-time measurement of glucose and is a powerful tool to help manage glucose levels and improve outcomes for people with diabetes [@dupre2015; @v2023; @desalvo2013]. Individuals wearing continuous glucose monitoring technology can be alerted if they are approaching hyperglycemic (blood glucose \>180 mg/dL) or hypoglycemic (blood glucose \< 70 mg/dL) thresholds or if the rate of change in blood glucose levels is fast [@desalvo2013].
+
+Machine learning methods have been used with continuous glucose monitoring devices to produce models that can forecast potential future adverse glycemic events and warn before those events occurs [@ali2024; @arefeen2023; @cichosz2021; @dave2024; @duckworth2022]. With the advent of wearable activity tracker technology, there is an opportunity to improve the predictions of these models by incorporating data on activity levels[@campanella2025; @ahmed2023]. However, the majority of research to date has been done on continuous glucose monitoring in people with Type 1 Diabetes, in part because accurate forecasting of blood glucose levels requires a large amount of data and most of the publicly available datasets have been compiled from people with Type 1 Diabetes [@sun; @sergazinov]. Additionally, these datasets often contain a relatively small number of individuals, which makes it difficult to train models that can generalize to a larger population [@fiorini2017; @sergazinova].
+
+Blood glucose dynamics vary within individuals with both types of diabetes and make it difficult to predict blood glucose levels for some individuals [@cichosz2024]. This heterogeneity is mediated by both modifiable and unmodifiable factors, such as behavioral health (*e.g.* smoking, diet, exercise), genetics, clinical characteristics and environmental exposures [@redondo2020]. We aim to produce more accurate forecasts of blood glucose levels in individuals with Type 2 Diabetes by coupling wearable activity monitor data with blood glucose levels. In this study, we will also evaluate patient-level factors that may limit the predictive accuracy of these models.
+
+## Study Design
+
+This study will use data from individuals in the AI-READI dataset, including individuals with and without Type 2 Diabetes. Individuals without diabetes will be included as a comparison group to provide a baseline of what model predictive accuracy looks like for individuals who do not have to externally control their blood glucose levels.
+
+We will be forecasting blood glucose levels using Recurrent Neural Nets (RNN) and evaluating how predictive accuracy decays as the forecasting horizon decreases, with the goal of accurately predicting adverse glycemic events in the future. To help improve the accuracy of these forecasts we will include both time-varying and non-time-varying covariates in the models. The time-varying covariates will include data captured by the wearable activity trackers: heart rate, physical activity, respiratory rate, stress, and sleep data. We will also include data from the home environment sensor: light levels, particulate matter, temperature, humidity, volatile organic compound, nitrogen oxide. Other non-time-varying covariates will include physical attributes (age, weight, and height), behavioral attributes (responses to the dietary questionnaire, substance use questionnaire, and the diabetes survey), general health (responses from the general health questionnaire).
+
+To evaluate model performance, we will evaluate model accuracy over progressively longer forecasting horizons starting at 15 minutes and increasing up to 8 hours. We will forecast both binary outcomes (hyperglycemic events and hypoglycemic events) as well as continuous outcomes (blood glucose concentrations). Model performance will be evaluated with standard evaluation metrics for both continuous and binary outcomes. Finally, we will evaluate model performance among different groups of individuals within the data as a way to generate additional hypotheses about what factors may contribute to the difficult in forecasting blood glucose levels. These factors will include disease severity, sex, and social determinants of health, such as education and health insurance coverage.
+
+# References
+
+::: {#refs}
+:::
