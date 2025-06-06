@@ -52,3 +52,11 @@ renv/
 test/
 
 data/
+.Rproj.user
+.Rdata
+.DS_Store
+.quarto
+
+output/
+.renvignore
+

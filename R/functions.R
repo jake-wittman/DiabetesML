@@ -39,7 +39,18 @@ processCGM <- function(json_dat) {
       time_s = c('transmitter_time', 'value')
     ) |>
     select(-patient_id, -cgm) |>
-    mutate(device = 'cgm')
+    mutate(device = 'cgm') |>
+    mutate(bg = map_dbl(bg, function(x) {
+      if (is.null(x) || length(x) == 0) {
+        return(NA_real_)
+      } else {
+        # Handle multiple elements by taking first
+        first_element <- x[1]
+        # Suppress warnings for character to numeric conversion
+        result <- suppressWarnings(as.numeric(first_element))
+        return(result)
+      }
+    }))
 
 }
 
@@ -87,8 +98,9 @@ processPhysicalActivity <- function(json_dat) {
     unnest_wider(time_interval) |>
     select(-user_id) |>
     mutate(start_date_time = ymd_hms(start_date_time),
-           end_date_time = ymd_hms(end_date_time),
-           steps = as.numeric(value))
+           timestamp = ymd_hms(end_date_time),
+           steps = as.numeric(value)) |>
+    select(-value)
 }
 
 processCalories <- function(json_dat) {
@@ -276,45 +288,118 @@ extract_time_s <- function(df) {
   }
 }
 
-align_to_ref_time_safe <- function(df) {
-  if ("bg" %in% names(df)) {
-    return(df %>% select(time_s, everything()))
+
+extract_one_per_list <- function(list_of_dfs, target_uuid) {
+  # Find first df where uuid matches
+  matched_df <- keep(list_of_dfs, ~ target_uuid %in% .x$uuid)
+  if (length(matched_df) > 0) {
+    return(matched_df[[1]])
+  } else {
+    return(NULL)
   }
-
-  time_s <- extract_time_s(df)
-
-  # Data range limits
-  time_min <- min(time_s, na.rm = TRUE)
-  time_max <- max(time_s, na.rm = TRUE)
-
-  data_cols <- setdiff(names(df), c("time_s", "timestamp", "date_time", "start_date_time", "end_date_time", "uuid", "device", "unit", "activity_name"))
-
-  aligned_df <- map_dfc(data_cols, function(col) {
-    if (is.numeric(df[[col]])) {
-      # Interpolate only inside range, NA outside
-      approx_y <- approx(
-        x = time_s,
-        y = df[[col]],
-        xout = ref_time_s,
-        rule = 1  # 1 = NA outside range
-      )$y
-      tibble(!!col := approx_y)
-    } else {
-      # Nearest only inside range, NA outside
-      nearest_values <- sapply(ref_time_s, function(rt) {
-        if (rt < time_min || rt > time_max) {
-          return(NA)
-        } else {
-          idx <- which.min(abs(time_s - rt))
-          df[[col]][idx]
-        }
-      })
-      tibble(!!col := nearest_values)
-    }
-  })
-
-  bind_cols(tibble(time_s = ref_time_s), aligned_df)
 }
 
 
+align_timeseries <- function(df_list, time_interval = 60, max_gap_linear = 3600) {
+
+  # Extract all unique timestamps and create common time grid
+  all_timestamps <- df_list %>%
+    map(~ {
+      ts <- .x$timestamp
+      # Handle both character and POSIXct timestamps
+      if (is.character(ts)) {
+        as.POSIXct(ts, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC")
+      } else {
+        as.POSIXct(ts, tz = "UTC")
+      }
+    }) %>%
+    unlist() %>%
+    as.POSIXct(origin = "1970-01-01", tz = "UTC")
+
+  time_range <- range(all_timestamps, na.rm = TRUE)
+  common_grid <- seq(from = time_range[1],
+                     to = time_range[2],
+                     by = time_interval)
+
+  # Identify value columns (exclude timestamp, uuid, and other metadata)
+  get_value_cols <- function(df) {
+    exclude_cols <- c("timestamp", "uuid", "device", "activity_name",
+                      "hr_units", "date_time", "time_s", "unit",
+                      "start_date_time", "value")
+    names(df)[!names(df) %in% exclude_cols & sapply(df, is.numeric)]
+  }
+
+  # Process each dataframe
+  aligned_list <- imap(df_list, function(df, idx) {
+    value_cols <- get_value_cols(df)
+
+    if (length(value_cols) == 0) return(NULL)
+
+    # Convert timestamps to POSIXct consistently
+    if (is.character(df$timestamp)) {
+      df$timestamp <- as.POSIXct(df$timestamp, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC")
+    } else {
+      df$timestamp <- as.POSIXct(df$timestamp, tz = "UTC")
+    }
+
+    # Convert cumulative variables to incremental
+    cumulative_vars <- c("kcal", "steps")
+    df_processed <- df
+
+    for (cum_var in cumulative_vars) {
+      if (cum_var %in% names(df_processed)) {
+        df_processed <- df_processed %>%
+          arrange(timestamp) %>%
+          mutate(!!sym(cum_var) := {
+            diffs <- c(0, diff(!!sym(cum_var)))
+            # Set negative values (resets) to the current value instead
+            ifelse(diffs < 0, !!sym(cum_var), diffs)
+          })
+      }
+    }
+
+    # Create base dataframe with common time grid
+    base_df <- data.frame(
+      timestamp = common_grid,
+      uuid = df$uuid[1]
+    )
+
+    # For each value column, interpolate to common grid
+    for (col in value_cols) {
+      # Remove rows with missing timestamps or values
+      clean_data <- df_processed[!is.na(df_processed$timestamp) & !is.na(df_processed[[col]]), ]
+
+      if (nrow(clean_data) >= 2) {  # Changed from > 1 to >= 2 for clarity
+        # Interpolate using approx
+        interpolated <- approx(x = as.numeric(clean_data$timestamp),
+                               y = clean_data[[col]],
+                               xout = as.numeric(common_grid),
+                               method = "linear",
+                               rule = 1)$y
+
+        base_df[[col]] <- interpolated
+      } else if (nrow(clean_data) == 1) {
+        # If only one data point, use constant interpolation
+        base_df[[col]] <- clean_data[[col]][1]
+      } else {
+        base_df[[col]] <- NA
+      }
+    }
+
+    # Add source identifier
+    base_df$source <- paste0("df_", idx)
+
+    return(base_df)
+  })
+
+  # Remove NULL entries and combine
+  aligned_list <- aligned_list[!sapply(aligned_list, is.null)]
+
+  # Full join all dataframes on timestamp and uuid
+  result <- reduce(aligned_list, function(x, y) {
+    full_join(x, y, by = c("timestamp", "uuid"))
+  })
+
+  return(result)
+}
 

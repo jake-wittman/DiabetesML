@@ -7,16 +7,23 @@
 library(targets)
 library(tarchetypes) # Load other packages as needed.
 library(jsonlite)
+library(JakeR)
+
 # library(crew)
 # Set target options:
 tar_option_set(
   packages = c("tibble",
+               'JakeR',
                'tarchetypes',
                'dplyr',
                'lubridate',
                'readr',
                'dplyr',
+               'ggplot2',
                'purrr',
+               'zoo',
+               'splines',
+               'jsonlite',
                'tidyr'), # Packages that your targets need for their tasks.
   error = 'null'
   #
@@ -35,9 +42,9 @@ tar_option_set(
   #
   # Set other options as needed.
 )
-# tar_option_set(
-#   controller = crew_controller_local(workers = 8)
-# )
+tar_option_set(
+  controller = crew::crew_controller_local(workers = 8)
+)
 # Run the R scripts in the R/ folder with your custom functions:
 tar_source()
 # tar_source("other_functions.R") # Source other scripts as needed.
@@ -178,42 +185,45 @@ list(
                dat <- mutate(dat, uuid = paste0('AIREAD-', person_id))
                dat
              }),
+  tar_target(all_lists,
+             list(cgm_processed, hr_processed,
+                  physical_activity_calorie_processed, physical_activity_processed, ox_sat_processed)
+  ),
+
+
+  tar_target(
+    common_uuids,
+    {
+     uuids_list <- map(all_lists, ~unique(.x$uuid))
+
+      common_uuids <- reduce(uuids_list, intersect)
+      common_uuids
+    },
+  ),
+
+  tar_target(union_uuid_list,
+             map(all_lists, ~filter(.x, uuid %in% common_uuids))
+             ),
+  # union_uuid_list is a 5 element list with a data.frame rbind() across all
+  # uuids. I need a list of lists where the sub-lists contain the ts data for
+  # a single uuid
+  tar_target(reorganize_lists,
+             {
+               new_list <- vector('list', length = length(common_uuids))
+               for (i in 1:length(common_uuids)) {
+                 new_list[[i]] <- map(union_uuid_list, ~filter(.x, uuid == common_uuids[i]))
+               }
+               new_list
+             },
+             iteration = 'list'
+             ),
 
   tar_target(
     realigned_ts,
-    {
-      # List your data.frames
-      df_list <- list(
-        cgm_processed,
-        hr_processed,
-        ox_sat_processed,
-        physical_activity_calorie_processed,
-        physical_activity_processed,
-        respiratory_rate_processed,
-        stress_processed,
-        sleep_processed
-      )
+    align_timeseries(reorganize_lists, time_interval = 300),
+    pattern = map(reorganize_lists)
+  ),
 
-      # Step 1: Identify reference df and its time vector
-      ref_df <- df_list %>%
-        keep( ~ "bg" %in% names(.)) %>%
-        .[[1]]
-
-      ref_time_s <- ref_df$time_s
-      # Step 4: Apply to all and combine into one wide df
-      aligned_list <- map(df_list, align_to_ref_time_safe)
-      final_combined_df <- reduce(aligned_list, left_join, by = "time_s")
-    },
-    pattern = map(
-      cgm_processed,
-      hr_processed,
-      ox_sat_processed,
-      physical_activity_calorie_processed,
-      physical_activity_processed,
-      respiratory_rate_processed,
-      stress_processed,
-      sleep_processed
-    ),
-    iteration = 'list'
-  )
+  tar_target(write_realigned_ts,
+             arrow::write_parquet(realigned_ts, 'output/reorganized_ts.parquet'))
 )
